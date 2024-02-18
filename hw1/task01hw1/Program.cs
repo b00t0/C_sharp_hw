@@ -7,11 +7,18 @@ int num1 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите второе число");
 int num2 = Convert.ToInt32(Console.ReadLine());
 
-if (num1 > num2)
+if (num1 == num2)
 {
-    Console.WriteLine("первое число больше");
+    Console.WriteLine("числа равны");
 }
 else
 {
-    Console.WriteLine("второе число больше");
+    if (num1 > num2)
+    {
+        Console.WriteLine("первое число больше");
+    }
+    else
+    {
+        Console.WriteLine("второе число больше");
+    }
 }
