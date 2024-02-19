@@ -18,7 +18,5 @@ if (c > max)
 {
     max = c;
 }
+
 Console.WriteLine(max);
-
-
-// return Math.Max (Math.Max(a, b), c);
