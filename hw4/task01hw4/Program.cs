@@ -4,13 +4,13 @@
 
 Console.Clear();
 
-int DigitSum(int currentNum)
+static int DigitSum(int currentNum)
 {
     int digitSum = 0;
     while (currentNum > 0)
     {
-        digitSum = digitSum + currentNum % 10;
-        currentNum = currentNum / 10;
+        digitSum += currentNum % 10;
+        currentNum /= 10;
     }
     return digitSum;
 }
@@ -27,8 +27,7 @@ while (true)
         break;
     }
 
-    int number;
-    if (int.TryParse(stopWord, out number))
+    if (int.TryParse(stopWord, out int number))
     {
         // int sum = 0;
         int sum = DigitSum(number);
