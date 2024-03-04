@@ -19,7 +19,7 @@ static int DigitSum(int currentNum)
 while (true)
 {
     Console.WriteLine("Enter the integer number");
-    string stopWord = Console.ReadLine();
+    string stopWord = Console.ReadLine()!;
 
     if (stopWord == "q")
     {
