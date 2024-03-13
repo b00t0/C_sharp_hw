@@ -27,7 +27,7 @@ int numberM = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Enter the natural integer number N");
 int numberN = Convert.ToInt32(Console.ReadLine());
 
-if (numberM < 0 || numberN < 0)
+if (numberM <= 0 || numberN <= 0)
 {
     Console.WriteLine("Incorrect input. Need to enter the natural numbers");
     return;
