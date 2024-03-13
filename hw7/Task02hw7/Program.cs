@@ -26,14 +26,14 @@ int Ackermann(int n, int m)
 }
 
 
-Console.WriteLine("Enter the natural integer number M");
+Console.WriteLine("Enter the non-negative integer number M");
 int numberM = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Enter the natural integer number N");
+Console.WriteLine("Enter the non-negative integer number N");
 int numberN = Convert.ToInt32(Console.ReadLine());
 
 if (numberM < 0 || numberN < 0)
 {
-    Console.WriteLine("Incorrect input. Need to enter the natural numbers");
+    Console.WriteLine("Incorrect input. Need to enter the non-negative numbers");
     return;
 }
 
